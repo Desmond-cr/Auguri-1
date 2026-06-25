@@ -55,7 +55,8 @@ export default function Navbar() {
             display={{ base: 'flex', md: 'none' }}
           />
           <Button
-            as={'a'}
+            as={NavLink}
+            to="/booking"
             fontSize={'sm'}
             fontWeight={400}
             color={'white'}
@@ -66,8 +67,6 @@ export default function Navbar() {
             display={{ base: 'none', md: 'inline-flex' }}
             ml={4}
             leftIcon={<FaCalendarCheck />}
-            href="https://wa.me/393500460774"
-            target="_blank"
           >
             Book Now
           </Button>
@@ -146,7 +145,8 @@ const MobileNav = ({ onClose }) => {
         </Box>
       ))}
       <Button
-        as={'a'}
+        as={NavLink}
+        to="/booking"
         fontSize={'sm'}
         fontWeight={600}
         color={'white'}
@@ -158,9 +158,6 @@ const MobileNav = ({ onClose }) => {
         w={'full'}
         leftIcon={<FaCalendarCheck />}
         onClick={onClose}
-        href="https://wa.me/393500460774"
-        target="_blank"
-        
       >
         Book Now
       </Button>
@@ -183,5 +180,10 @@ const NAV_ITEMS = [
     label: 'Contact',
     href: '/contact',
     icon: <FaEnvelope size={18}/>,
+  },
+  {
+    label: 'Booking',
+    href: '/booking',
+    icon: <FaCalendarCheck size={18}/>,
   },
 ];

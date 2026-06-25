@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
-import BgImage from "../assets/book.png"; // replace with your image path
+import { NavLink } from "react-router-dom";
+import BgImage from "../assets/book.png";
 
 const BookNowPanel = () => {
   return (
@@ -35,14 +36,13 @@ const BookNowPanel = () => {
         </Box>
         <Box flex={1} textAlign={{ base: "center", md: "right" }} >
           <Button
+            as={NavLink}
+            to="/booking"
             fontSize="lg"
             fontWeight="bold"
             color="white"
             bg="#9D7C49"
             fontFamily={"Poppins"}
-            href="https://wa.me/393500460774"
-            target="_blank"
-            as={'a'}
             _hover={{opacity: '0.9'}}
           >
             Book Now
