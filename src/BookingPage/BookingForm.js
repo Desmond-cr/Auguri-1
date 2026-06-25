@@ -17,7 +17,7 @@ import {
   AlertDescription,
   Spinner,
 } from '@chakra-ui/react';
-import pathImg from '../assets/travel.png';
+import pathImg from '../assets/path.png';
 
 const BookingForm = () => {
   const formRef = useRef();
@@ -52,11 +52,11 @@ const BookingForm = () => {
 
   return (
     <Flex direction={{ base: 'column', md: 'row' }} py={8} px={{ base: '4', md: '8' }}>
-      <Box flex="1" borderRadius={{ base: '15px 15px 0 0', md: '15px 0 0 15px' }} overflow="hidden">
+      <Box flex="1" minH={{ base: '280px', md: 'auto' }} borderRadius={{ base: '15px 15px 0 0', md: '15px 0 0 15px' }} overflow="hidden">
         <img
           src={pathImg}
           alt="Travel"
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', borderRadius: 'inherit' }}
         />
       </Box>
 
