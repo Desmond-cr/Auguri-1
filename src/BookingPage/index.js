@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import BookingHeader from "./BookingHeader";
+import Header from "../ContactUs/Header";
 import BookingForm from "./BookingForm";
 import Footer from "../Homepage/Footer";
 import LiveChatButton from "../Homepage/Chatbtn";
@@ -8,7 +8,7 @@ import LiveChatButton from "../Homepage/Chatbtn";
 const BookingPage = () => {
   return (
     <Box>
-      <BookingHeader />
+      <Header />
       <BookingForm />
       <LiveChatButton />
       <Footer />
