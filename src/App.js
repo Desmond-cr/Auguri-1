@@ -5,6 +5,7 @@ import NavBar from './Homepage/NavBar';
 import Homepage from './Homepage';
 import Aboutpage from './AboutPage'
 import ContactUs from './ContactUs'
+import BookingPage from './BookingPage'
 import ScrollToTop from './AboutPage/ScrollToTop';
 import Animation from './Animation'
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<Aboutpage />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/booking" element={<BookingPage />} />
         </Routes>
         </Animation>
     </>
