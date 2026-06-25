@@ -40,7 +40,7 @@ const BookingForm = () => {
     };
 
     emailjs
-      .send('service_i33le59', 'template_cpsdlpa', form, '4o2AvjQIQQZxcJb-i')
+      .send('service_i33le59', 'template_cpsdlpa', form, { publicKey: '4o2AvjQIQQZxcJb-i' })
       .then(() => {
         setStatus('success');
         formRef.current.reset();
