@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
-import Bg from '../assets/herobg.jfif';
+import Bg from '../assets/book.png';
 
 const BookingHeader = () => {
   return (
@@ -8,7 +8,7 @@ const BookingHeader = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      height="350px"
+      height="500px"
       position="relative"
       overflow="hidden"
     >
@@ -18,8 +18,8 @@ const BookingHeader = () => {
         left={0}
         width="100%"
         height="100%"
-        bgImage={`linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(${Bg})`}
-        bgPosition="center"
+        bgImage={`linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${Bg})`}
+        bgPosition="center center"
         bgRepeat="no-repeat"
         bgSize="cover"
       />
